@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0"
+            prefWidth="379.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="app.studentmanagement.GroupCreationController">
+   <TextField fx:id="tfName" layoutX="53.0" layoutY="74.0" promptText="Grupės pavadinimas">
+      <font>
+         <Font size="21.0"/>
+      </font>
+   </TextField>
+   <Button layoutX="142.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#onClickCreate" text="Sukurti">
+      <font>
+         <Font size="19.0"/>
+      </font>
+   </Button>
+</AnchorPane>

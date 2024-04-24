@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f5b07ab-f2bb-4506-a408-a67fcbf16a0b" name="Changes" comment="Student &amp; group tables, controllers">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/AppLauncher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/GroupCreationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/GroupCreationStage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/GroupTabController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/InitialStage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/MainStage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/StudentCreationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/StudentCreationStage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/StudentsTabController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/classes-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/createGroup-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/createStudent-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/groups-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/main-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/students-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Kotlin Enum" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2eM6OCRDYIjcDhaa0Hy6o59Baun" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AppLauncher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/DE14/dev/uni/java/StudentManagement/src/main/java/app/studentmanagement&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Launcher" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="app.studentmanagement.AppLauncher" />
+      <module name="StudentManagement" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f5b07ab-f2bb-4506-a408-a67fcbf16a0b" name="Changes" comment="" />
+      <created>1711702068414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711702068414</updated>
+      <workItem from="1711702069453" duration="2297000" />
+      <workItem from="1711891025041" duration="8767000" />
+      <workItem from="1713022214732" duration="2479000" />
+      <workItem from="1713864404407" duration="14895000" />
+      <workItem from="1713942712798" duration="6979000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Student &amp; group tables, controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Student &amp; group tables, controllers" />
+  </component>
+</project>

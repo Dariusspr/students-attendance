@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+      prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="app.studentmanagement.MainController">
+   <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+         prefWidth="140.0">
+      <ToggleButton minWidth="140.0" mnemonicParsing="false" onMouseClicked="#changeSceneStudents" selected="true"
+                    text="Students">
+         <font>
+            <Font name="Arial Black" size="25.0"/>
+         </font>
+         <VBox.margin>
+            <Insets top="150.0"/>
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="10.0"/>
+         </padding>
+         <toggleGroup>
+            <ToggleGroup fx:id="currentView"/>
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton layoutX="10.0" layoutY="10.0" minWidth="140.0" mnemonicParsing="false"
+                    onMouseClicked="#changeSceneGroups" prefHeight="58.0" prefWidth="132.0" text="Groups"
+                    toggleGroup="$currentView">
+         <font>
+            <Font name="Arial Black" size="25.0"/>
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="10.0"/>
+         </padding>
+      </ToggleButton>
+      <ToggleButton layoutX="10.0" layoutY="226.0" minWidth="140.0" mnemonicParsing="false"
+                    onMouseClicked="#changeSceneView" prefHeight="58.0" prefWidth="132.0" text="View"
+                    toggleGroup="$currentView">
+         <font>
+            <Font name="Arial Black" size="25.0"/>
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="10.0"/>
+         </padding>
+      </ToggleButton>
+   </VBox>
+   <BorderPane fx:id="borderPane" maxWidth="760.0" minWidth="760.0" prefHeight="200.0" prefWidth="200.0"/>
+</HBox>
