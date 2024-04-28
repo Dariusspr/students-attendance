@@ -1,4 +1,7 @@
-package app.studentmanagement;
+package app.studentmanagement.stage;
+
+import app.studentmanagement.model.Student;
+import app.studentmanagement.controller.StudentCreationController;
 
 public class StudentCreationStage extends InitialStage {
     private static StudentCreationStage stage;

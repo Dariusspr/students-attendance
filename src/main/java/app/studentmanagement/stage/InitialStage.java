@@ -1,6 +1,7 @@
-package app.studentmanagement;
+package app.studentmanagement.stage;
 
 
+import app.studentmanagement.App;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;

@@ -1,9 +1,10 @@
-package app.studentmanagement;
+package app.studentmanagement.controller;
 
+import app.studentmanagement.model.Data;
+import app.studentmanagement.stage.GroupCreationStage;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 
 public class GroupCreationController {
 
@@ -26,7 +27,7 @@ public class GroupCreationController {
                     list.set(i, tfName.getText());
                 }
             }
-            Data.getInstance().updateStudents(old,tfName.getText());
+            Data.getInstance().updateStudentsGroup(old,tfName.getText());
             close();
         }
         create = true;

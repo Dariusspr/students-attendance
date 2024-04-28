@@ -1,4 +1,6 @@
-package app.studentmanagement;
+package app.studentmanagement.stage;
+
+import app.studentmanagement.controller.GroupCreationController;
 
 public class GroupCreationStage extends InitialStage{
     private final GroupCreationController controller;

@@ -8,7 +8,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0"
             prefWidth="379.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="app.studentmanagement.GroupCreationController">
+            fx:controller="app.studentmanagement.controller.GroupCreationController">
    <TextField fx:id="tfName" layoutX="53.0" layoutY="74.0" promptText="Grupės pavadinimas">
       <font>
          <Font size="21.0"/>

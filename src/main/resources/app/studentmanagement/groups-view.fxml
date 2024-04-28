@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane onMouseClicked="#onClickChange" prefHeight="600.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.studentmanagement.GroupTabController">
-   <Button layoutX="57.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#onClickGroupMenu" prefHeight="39.0" prefWidth="323.0" text="Pridėti grupę">
+<AnchorPane onMouseClicked="#onClickChange" prefHeight="600.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.studentmanagement.controller.GroupTabController">
+   <Button layoutX="57.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#onClickGroupMenu" prefHeight="39.0" prefWidth="323.0" text="Add group">
       <font>
          <Font size="20.0" />
       </font>
    </Button>
-   <Button layoutX="57.0" layoutY="233.0" mnemonicParsing="false" onAction="#onClickDelete" prefHeight="39.0" prefWidth="323.0" text="Panaikinti grupę">
+   <Button layoutX="57.0" layoutY="233.0" mnemonicParsing="false" onAction="#onClickDelete" prefHeight="39.0" prefWidth="323.0" text="Remove group">
       <font>
          <Font size="20.0" />
       </font>
@@ -21,11 +21,11 @@
    <ScrollPane hbarPolicy="NEVER" layoutX="424.0" layoutY="44.0" minHeight="500.0" prefHeight="400.0" prefWidth="300.0">
       <TableView fx:id="tbData" maxHeight="428.0" maxWidth="300.0" minHeight="500.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0">
          <columns>
-            <TableColumn fx:id="groupNameCol" editable="false" maxWidth="300.0" minWidth="300.0" prefWidth="75.0" resizable="false" text="Grupė" />
+            <TableColumn fx:id="groupNameCol" editable="false" maxWidth="300.0" minWidth="300.0" prefWidth="75.0" resizable="false" text="Group" />
          </columns>
       </TableView>
    </ScrollPane>
-   <Button layoutX="57.0" layoutY="294.0" mnemonicParsing="false" onMouseClicked="#onClickChange" prefHeight="39.0" prefWidth="323.0" text="Pakeisti grupės pavadinimą">
+   <Button layoutX="57.0" layoutY="294.0" mnemonicParsing="false" onMouseClicked="#onClickChange" prefHeight="39.0" prefWidth="323.0" text="Update group">
       <font>
          <Font size="20.0" />
       </font>

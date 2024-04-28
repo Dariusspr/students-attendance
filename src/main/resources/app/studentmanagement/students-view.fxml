@@ -7,49 +7,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/21.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.studentmanagement.StudentsTabController">
-   <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="50.0" layoutY="36.0" maxHeight="300.0"
-               maxWidth="600.0" minHeight="300.0" minViewportHeight="300.0" minViewportWidth="600.0" minWidth="600.0"
-               prefHeight="300.0" prefWidth="600.0">
-      <TableView fx:id="tbData" maxHeight="300.0" maxWidth="600.0" minHeight="300.0" minWidth="600.0"
-                 prefHeight="300.0" prefWidth="604.0">
+<AnchorPane prefHeight="600.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.studentmanagement.controller.StudentsTabController">
+   <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="50.0" layoutY="36.0" maxHeight="300.0" maxWidth="600.0" minHeight="300.0" minViewportHeight="300.0" minViewportWidth="600.0" minWidth="600.0" prefHeight="300.0" prefWidth="600.0">
+      <TableView fx:id="tbData" maxHeight="300.0" maxWidth="600.0" minHeight="300.0" minWidth="600.0" prefHeight="300.0" prefWidth="604.0">
          <columns>
-            <TableColumn fx:id="firstNameColumn" editable="false" maxWidth="200.0" minWidth="200.0" prefWidth="75.0"
-                         resizable="false" text="Vardas"/>
-            <TableColumn fx:id="lastNameColumn" editable="false" maxWidth="200.0" minWidth="200.0" prefWidth="75.0"
-                         resizable="false" text="Pavardė"/>
-            <TableColumn fx:id="groupColumn" editable="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0"
-                         resizable="false" text="Grupė"/>
+            <TableColumn fx:id="firstNameColumn" editable="false" maxWidth="200.0" minWidth="200.0" prefWidth="75.0" resizable="false" text="First name" />
+            <TableColumn fx:id="lastNameColumn" editable="false" maxWidth="200.0" minWidth="200.0" prefWidth="75.0" resizable="false" text="Last name" />
+            <TableColumn fx:id="groupColumn" editable="false" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" resizable="false" text="Group" />
          </columns>
       </TableView>
    </ScrollPane>
-   <Button layoutX="50.0" layoutY="363.0" mnemonicParsing="false" onMouseClicked="#onClickStudentMenu" prefHeight="39.0"
-           prefWidth="323.0" text="Pridėti studentą">
+   <Button layoutX="50.0" layoutY="363.0" mnemonicParsing="false" onMouseClicked="#onClickStudentMenu" prefHeight="39.0" prefWidth="323.0" text="Add new student">
       <font>
-         <Font size="20.0"/>
+         <Font size="20.0" />
       </font>
    </Button>
-   <Button layoutX="50.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#onClickDelete" prefHeight="39.0"
-           prefWidth="323.0" text="Panaikinti studentą">
+   <Button layoutX="50.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#onClickDelete" prefHeight="39.0" prefWidth="323.0" text="Remove student">
       <font>
-         <Font size="20.0"/>
+         <Font size="20.0" />
       </font>
    </Button>
-   <Button layoutX="50.0" layoutY="462.0" mnemonicParsing="false" onMouseClicked="#onClickChange"
-           text="Atnaujinti studento duomenis">
+   <Button layoutX="50.0" layoutY="462.0" mnemonicParsing="false" onMouseClicked="#onClickChange" prefHeight="39.0" prefWidth="323.0" text="Update student">
       <font>
-         <Font size="20.0"/>
+         <Font size="20.0" />
       </font>
    </Button>
-   <Button layoutX="600.0" layoutY="501.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="146.0" text="Import">
+   <Button layoutX="600.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#onClickImport" prefHeight="39.0" prefWidth="146.0" text="Import">
       <font>
-         <Font size="20.0"/>
+         <Font size="20.0" />
       </font>
    </Button>
-   <Button layoutX="600.0" layoutY="549.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="146.0" text="Export">
+   <Button layoutX="600.0" layoutY="549.0" mnemonicParsing="false" onMouseClicked="#onClickSave" prefHeight="39.0" prefWidth="146.0" text="Save">
       <font>
-         <Font size="20.0"/>
+         <Font size="20.0" />
       </font>
    </Button>
 </AnchorPane>

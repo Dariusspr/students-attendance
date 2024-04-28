@@ -1,7 +1,14 @@
-package app.studentmanagement;
+package app.studentmanagement.model;
 
+import app.studentmanagement.file.CsvFileHandler;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.HashSet;
 
 public class Data {
     private static Data data = null;
@@ -38,11 +45,18 @@ public class Data {
         groups.add(group);
     }
 
-    public void updateStudents(String oldGroup, String newGroup) {
+    public void updateStudentsGroup(String oldGroup, String newGroup) {
         for (Student s : students) {
             if (s.getGroup().equalsIgnoreCase(oldGroup)) {
                 s.setGroup(newGroup);
             }
         }
+    }
+
+    public void loadData(String path) {
+        CsvFileHandler file = new CsvFileHandler();
+        file.importData(path);
+        students.setAll(file.getStudents());
+        groups.setAll(file.getGroups());
     }
 }

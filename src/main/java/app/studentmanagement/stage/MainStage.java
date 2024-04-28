@@ -1,4 +1,4 @@
-package app.studentmanagement;
+package app.studentmanagement.stage;
 
 public class MainStage extends InitialStage {
     private static MainStage stage;

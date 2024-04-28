@@ -1,5 +1,6 @@
-package app.studentmanagement;
+package app.studentmanagement.controller;
 
+import app.studentmanagement.App;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -63,7 +64,7 @@ public class MainController implements  Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         scenes.put(STUDENTS_VIEW, "students-view.fxml");
         scenes.put(GROUPS_VIEW, "groups-view.fxml");
-        scenes.put(VIEW_VIEW, "students-view.fxml");
+        scenes.put(VIEW_VIEW, "attendance-view.fxml");
         changeSceneStudents();
     }
 }

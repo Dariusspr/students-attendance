@@ -1,11 +1,19 @@
-package app.studentmanagement;
+package app.studentmanagement.controller;
 
+import app.studentmanagement.file.CsvFileHandler;
+import app.studentmanagement.model.Data;
+import app.studentmanagement.stage.LoadDataStage;
+import app.studentmanagement.model.Student;
+import app.studentmanagement.stage.StudentCreationStage;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.FileChooser;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -43,6 +51,16 @@ public class StudentsTabController implements Initializable {
         stage.show();
     }
 
+    @FXML
+    private void onClickImport() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("csv files", "*.csv"));
+        fileChooser.setTitle("Open my student data");
+        File selectedFile = fileChooser.showOpenDialog(LoadDataStage.GetInstance());
+        if (selectedFile != null) {
+            Data.getInstance().loadData(selectedFile.getPath());
+        }
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -51,5 +69,24 @@ public class StudentsTabController implements Initializable {
         groupColumn.setCellValueFactory(new PropertyValueFactory<>("group"));
 
         tbData.setItems(Data.getInstance().getStudents());
+    }
+
+    @FXML
+    private void onClickSave() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("csv files", "*.csv"));
+        fileChooser.setTitle("Save my student data");
+        File selectedFile = fileChooser.showSaveDialog(LoadDataStage.GetInstance());
+        if (selectedFile != null) {
+            CsvFileHandler fileHandler = new CsvFileHandler();
+            fileHandler.saveData(selectedFile.getPath());
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Data saved");
+            alert.setHeaderText(null);
+            alert.setContentText("Data saved successfully!");
+            alert.showAndWait();
+        }
+
+
     }
 }

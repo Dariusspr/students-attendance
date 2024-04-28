@@ -1,5 +1,7 @@
-package app.studentmanagement;
+package app.studentmanagement.controller;
 
+import app.studentmanagement.model.Data;
+import app.studentmanagement.stage.GroupCreationStage;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -25,7 +27,7 @@ public class GroupTabController implements Initializable {
         String group = tbData.getSelectionModel().getSelectedItem();
         if (group == null)
             return;
-        Data.getInstance().updateStudents(group,"");
+        Data.getInstance().updateStudentsGroup(group,"");
         Data.getInstance().getGroups().remove(group);
     }
 

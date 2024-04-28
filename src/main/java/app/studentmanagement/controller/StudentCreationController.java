@@ -1,11 +1,13 @@
-package app.studentmanagement;
+package app.studentmanagement.controller;
 
+import app.studentmanagement.model.Data;
+import app.studentmanagement.model.Student;
+import app.studentmanagement.stage.StudentCreationStage;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -37,6 +39,7 @@ public class StudentCreationController implements Initializable {
                     old.setLastName(tfLast.getText());
                     old.setGroup(groupOptions.getValue());
                     list.set(i, old);
+                    Data.getInstance().getStudents().get(i).setFirstName(tfFirst.getText());
                 }
             }
             close();
