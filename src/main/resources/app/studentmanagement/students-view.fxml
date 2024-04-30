@@ -32,12 +32,17 @@
          <Font size="20.0" />
       </font>
    </Button>
-   <Button layoutX="600.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#onClickImport" prefHeight="39.0" prefWidth="146.0" text="Import">
+   <Button layoutX="558.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#onClickImportStage" prefHeight="39.0" prefWidth="188.0" text="Import">
       <font>
          <Font size="20.0" />
       </font>
    </Button>
-   <Button layoutX="600.0" layoutY="549.0" mnemonicParsing="false" onMouseClicked="#onClickSave" prefHeight="39.0" prefWidth="146.0" text="Save">
+   <Button layoutX="558.0" layoutY="549.0" mnemonicParsing="false" onMouseClicked="#onClickSaveExcel" prefHeight="39.0" prefWidth="188.0" text="Save as excel">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Button>
+   <Button layoutX="558.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#onClickSaveCsv" prefHeight="39.0" prefWidth="188.0" text="Save as csv">
       <font>
          <Font size="20.0" />
       </font>

@@ -4,35 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5b07ab-f2bb-4506-a408-a67fcbf16a0b" name="Changes" comment="Student &amp; group tables, controllers">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/AttendanceTabController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/LoadDataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/TableController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/file/CsvFileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/file/FileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/file/PdfFileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/stage/LoadDataStage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/stage/TableStage.java" afterDir="false" />
+    <list default="true" id="4f5b07ab-f2bb-4506-a408-a67fcbf16a0b" name="Changes" comment="Complete">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/file/ExcelFileHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/model/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/GroupCreationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/GroupCreationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/GroupCreationStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/stage/GroupCreationStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/GroupTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/GroupTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/InitialStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/stage/InitialStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/MainStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/stage/MainStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/StudentCreationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/StudentCreationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/StudentCreationStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/stage/StudentCreationStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/StudentsTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/StudentsTabController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/LoadDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/LoadDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/StudentsTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/StudentsTabController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/TableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/controller/TableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/file/CsvFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/file/CsvFileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/studentmanagement/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/studentmanagement/model/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/classes-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/attendance-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/createGroup-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/createGroup-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/createStudent-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/createStudent-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/groups-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/groups-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/main-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/students-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app/studentmanagement/students-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +94,8 @@
       <workItem from="1714041245103" duration="10429000" />
       <workItem from="1714132545314" duration="5686000" />
       <workItem from="1714230404329" duration="6651000" />
-      <workItem from="1714288518260" duration="1406000" />
+      <workItem from="1714288518260" duration="1543000" />
+      <workItem from="1714457339362" duration="4308000" />
     </task>
     <task id="LOCAL-00001" summary="Student &amp; group tables, controllers">
       <option name="closed" value="true" />
@@ -123,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713949982378</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Complete">
+      <option name="closed" value="true" />
+      <created>1714290049474</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714290049474</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Student &amp; group tables, controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Student &amp; group tables, controllers" />
+    <MESSAGE value="Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete" />
   </component>
 </project>

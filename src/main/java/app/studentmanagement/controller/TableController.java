@@ -1,6 +1,7 @@
 package app.studentmanagement.controller;
 
 import app.studentmanagement.file.CsvFileHandler;
+import app.studentmanagement.file.ExcelFileHandler;
 import app.studentmanagement.file.PdfFileHandler;
 import app.studentmanagement.model.Data;
 import app.studentmanagement.model.Student;
@@ -54,7 +55,7 @@ public class TableController {
         alert.showAndWait();
     }
     @FXML
-    void onClickExportPdf(MouseEvent event) {
+    private void onClickExportPdf() {
         String path = getPath();
         if (path == null)
             return;
@@ -62,6 +63,18 @@ public class TableController {
         pdfFileHandler.setTableData(tableData);
         pdfFileHandler.setTableHeader(tableHeader);
         pdfFileHandler.exportData(path);
+        alertExportedSuccess();
+    }
+
+    @FXML
+    private  void onClickExportExcel() {
+        String path = getPath();
+        if (path == null)
+            return;
+        ExcelFileHandler excelFileHandler = new ExcelFileHandler();
+        excelFileHandler.setTableData(tableData);
+        excelFileHandler.setTableHeader(tableHeader);
+        excelFileHandler.exportData(path);
         alertExportedSuccess();
     }
     private String getPath() {

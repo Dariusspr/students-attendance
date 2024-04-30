@@ -3,6 +3,8 @@ module app.studentmanagement {
     requires javafx.fxml;
     requires kernel;
     requires layout;
+    requires org.apache.poi.poi;
+    requires org.apache.poi.ooxml;
 
 
     opens app.studentmanagement to javafx.fxml;

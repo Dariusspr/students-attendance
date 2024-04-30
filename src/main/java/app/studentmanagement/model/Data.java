@@ -53,10 +53,8 @@ public class Data {
         }
     }
 
-    public void loadData(String path) {
-        CsvFileHandler file = new CsvFileHandler();
-        file.importData(path);
-        students.setAll(file.getStudents());
-        groups.setAll(file.getGroups());
+    public void loadData(ObservableList<Student> students, ObservableList<String> groups) {
+        this.students.setAll(students);
+        this.groups.setAll(groups);
     }
 }

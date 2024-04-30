@@ -17,6 +17,8 @@ public class CsvFileHandler implements FileHandler {
     private ObservableList<String[]> tableData = FXCollections.observableArrayList();
     @Override
     public void importData(String filePath) {
+        students.clear();
+        groups.clear();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = br.readLine()) != null) {

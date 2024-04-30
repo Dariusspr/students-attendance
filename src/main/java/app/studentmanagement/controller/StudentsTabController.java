@@ -1,6 +1,7 @@
 package app.studentmanagement.controller;
 
 import app.studentmanagement.file.CsvFileHandler;
+import app.studentmanagement.file.ExcelFileHandler;
 import app.studentmanagement.model.Data;
 import app.studentmanagement.stage.LoadDataStage;
 import app.studentmanagement.model.Student;
@@ -52,14 +53,8 @@ public class StudentsTabController implements Initializable {
     }
 
     @FXML
-    private void onClickImport() {
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("csv files", "*.csv"));
-        fileChooser.setTitle("Open my student data");
-        File selectedFile = fileChooser.showOpenDialog(LoadDataStage.GetInstance());
-        if (selectedFile != null) {
-            Data.getInstance().loadData(selectedFile.getPath());
-        }
+    private void onClickImportStage() {
+        LoadDataStage.GetInstance().show();
     }
 
     @Override
@@ -72,7 +67,24 @@ public class StudentsTabController implements Initializable {
     }
 
     @FXML
-    private void onClickSave() {
+    private void onClickSaveExcel() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("excel files", "*.xls", "*.xlsx"));
+        fileChooser.setTitle("Save my student data");
+        File selectedFile = fileChooser.showSaveDialog(LoadDataStage.GetInstance());
+        if (selectedFile != null) {
+            ExcelFileHandler fileHandler = new ExcelFileHandler();
+            fileHandler.saveData(selectedFile.getPath());
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Data saved");
+            alert.setHeaderText(null);
+            alert.setContentText("Data saved successfully!");
+            alert.showAndWait();
+        }
+    }
+
+    @FXML
+    private void onClickSaveCsv() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("csv files", "*.csv"));
         fileChooser.setTitle("Save my student data");
@@ -86,7 +98,5 @@ public class StudentsTabController implements Initializable {
             alert.setContentText("Data saved successfully!");
             alert.showAndWait();
         }
-
-
     }
 }
